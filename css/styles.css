@@ -10,6 +10,7 @@
 
 /* reset start */
 
+/* outline: 2px solid red; */
 h1,
 h2,
 h3,
@@ -85,9 +86,6 @@ body {
   margin: 0 auto;
 
   padding: 0 15px;
-
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 
 .section {
@@ -127,8 +125,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
-
-  /* outline: 2px solid red; */
 }
 
 .logo-text {
@@ -146,8 +142,6 @@ body {
 
 .address {
   margin-left: auto;
-
-  /* outline: 2px solid red; */
 }
 .address-link {
   display: flex;
@@ -157,8 +151,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
-
-  /* outline: 2px solid red; */
 }
 
 .link:hover,
@@ -187,8 +179,6 @@ body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-
-  /* outline: 2px solid red; */
 }
 
 /* h1 */
@@ -203,8 +193,6 @@ body {
   line-height: 1.07;
   color: var(--color-white);
   letter-spacing: 0.02em;
-
-  /* background-color: red; */
 }
 
 /* h2 */
@@ -217,8 +205,6 @@ body {
   text-transform: capitalize;
   color: var(--color-navy-blue);
   letter-spacing: 0.02em;
-
-  /* outline: 2px solid red; */
 }
 
 /* h3 */
@@ -232,9 +218,6 @@ body {
   line-height: 1.2;
   color: var(--color-navy-blue);
   letter-spacing: 0.02em;
-
-  /* outline: 2px solid red;
-  */
 }
 /* p */
 .text {
@@ -242,9 +225,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-
-  /* outline: 2px solid red;
- */
 }
 
 /* Features */
@@ -341,7 +321,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 1128px;
-  /* gap: 24px; */
 }
 .team-list > .team-item {
   width: calc((100% - 3 * 24px) / 4);
@@ -369,7 +348,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  /* padding: 32px 0; */
 }
 .socials-item {
   display: flex;
