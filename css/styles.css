@@ -116,6 +116,9 @@ body {
 /* ------------------------------Header--------------------------- */
 .header {
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -161,12 +164,13 @@ body {
 
   text-decoration: none;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
 .link:focus {
   color: var(--color-ocean);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .logo {
@@ -251,12 +255,12 @@ body {
   color: var(--color-white);
   cursor: pointer;
   background: var(--color-iris);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--color-ocean);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* _____________________________________________________________________________ */
@@ -307,12 +311,12 @@ body {
 .team-item {
   flex-basis: calc((100% - 3*24px)/4);
   text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-item:hover .socials-link {
+.team-item:hover .socials-link,
+.team-item:focus .socials-link {
   background-color: var(--color-ocean);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .card-team-bg {
@@ -369,6 +373,7 @@ body {
   border-radius: 50%;
   background-color: var(--color-iris);
   padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-icon {
@@ -413,7 +418,7 @@ body {
   background-color: var(--color-iris);
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .overlay-text {
@@ -422,13 +427,12 @@ body {
 
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-text-portfolio {
   border: 1px solid var(--color-cornflower);
   border-top: none;
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
 }
 
 /* __________________________________________________________________________ */
@@ -459,6 +463,9 @@ body {
   color: var(--color-cloud);
 }
 
+.footer .socials-list {
+  gap: 16px;
+}
 .social-media {
   font-weight: 500;
   color: var(--color-white);
@@ -468,5 +475,4 @@ body {
 .footer .socials-link:hover,
 .footer .socials-link:focus {
   background-color: var(--color-green);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
